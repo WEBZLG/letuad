@@ -1,0 +1,31 @@
+.nav{
+	position: relative;
+	overflow: hidden;
+	height: 69px;
+
+}
+.nav-bg{
+    color: #fff;
+    height: 120%;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+    background: rgba(0,0,0,0.9);
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -o-filter: blur(4px);
+    -ms-filter: blur(4px);
+    filter: blur(4px);
+    position: absolute;
+    left: -10px;
+    right: -10px;
+    top: -8px;
+    z-index: -1;
+}
+.nav-float{
+
+}
+.nav-list li{
+	float: left;
+}
+.nav-list a{
+	color: #fff;
+}
