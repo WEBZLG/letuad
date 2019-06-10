@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div class="right-box">
+			<ul>
+				<li class="leave-word">
+					<img src="img/leftnav_icon2.png" >
+				</li>
+				<li>
+					<img src="img/leftnav_icon2.png" >
+				</li>
+				<li>
+					<img src="img/leftnav_icon2.png" >
+				</li>
+				<li>
+					<img src="img/leftnav_icon2.png" >
+				</li>
+				<li class="return-top">
+					<img src="img/leftnav_icon2.png" >
+				</li>
+			</ul>
+			<div class="hover-box">
+				<div class="hover-item">
+					<div class="message">
+						<h3>请将您的需求留言给我们</h3>
+						<div class="ipt-box clearfix">
+							<input type="text" class="fl" name="" id="" value="" placeholder="您的姓名"/>
+							<input type="text" class="fr" name="" id="" value="" placeholder="您的电话"/>
+						</div>
+						<div class="text-box">
+							<textarea class="textarea" placeholder="您的需求"></textarea>
+						</div>
+						<button type="button" class="submit">提交留言</button>
+					</div>
+					<div class="submit-success">
+						<div class="success-box">
+							<div class="success-icon">
+								<img src="img/ly.png" >
+							</div>
+							<p>感谢您的留言，我们会尽快联系您！</p>
+						</div>
+						<button type="button" class="close-btn">关闭</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(function(){
+				$(".leave-word").on("click",function(){
+					$(".message").show();
+					$(".submit-success").hide();
+					$(".hover-item").slideToggle(500)
+				})
+				
+				$(".submit").on("click",function(){
+					$(".message").hide();
+					$(".submit-success").show();
+				})
+				
+				$(".close-btn").on("click",function(){
+					$(".hover-item").slideUp(500)
+				})
+				
+				$('.return-top').on("click",function(){
+				$('html , body').animate({scrollTop: 0},'slow');
+				});
+			})
+		</script>
+	</body>
+</html>

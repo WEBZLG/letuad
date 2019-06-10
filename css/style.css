@@ -405,7 +405,260 @@
 	line-height:30px;
 }
 
+/* 右侧导航 */
+.rightNav{
+	position: fixed;
+    right: 0;
+    top: 50%;
+    z-index: 999;
+	}
+.rightNav li{
+	height: 55px;
+	width: 55px;
+	text-align: center;
+	line-height: 55px;
+	margin-bottom: 4px;
+	cursor: pointer;
+	background-color: #353535;
+}
+.rightNav li:last-child{
+	background-color: #009933;
+}
 
+.right-box{
+	position: relative;
+}
+
+.hover-item{
+	background-color: #fff;
+    border-radius: 3px;
+	display: none;
+}
+
+.hover-item .message{
+	padding: 20px;
+}
+
+.hover-box{
+    position: absolute;
+    width: 478px;
+    left: -482px;
+    top: 0;
+}
+.hover-box h3{
+	font-size: 14px;
+	color: #515151;
+}
+
+.ipt-box input{
+	height: 36px;
+	width: 209px;
+	border: none;
+	outline: none;
+	margin: 18px 0 10px;
+	text-indent: 12px;
+	font-size: 14px;
+	background-color: #EEEEEE;
+}
+.textarea{
+    height: 88px;
+    width: 414px;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    text-indent: 0;
+    padding: 12px;
+    margin-bottom: 10px;
+    background-color: #EEEEEE;
+}
+.message .submit,
+.submit-success .close-btn{
+	font-size: 14px;
+    color: #fff;
+    width: 100%;
+    padding: 12px 0;
+    border: none;
+    outline: none;
+    background-color: #F05352;
+    cursor: pointer;
+}
+.submit-success{
+	padding: 20px;
+	display: none;
+}
+.success-box{
+	text-align: center;
+    padding: 78px 0;
+    color: #515151;
+}
+
+.success-icon ,.success-box p{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/* wedo详情 */
+.pub-banner img{
+	width: 100%;
+}
+.pub-title{
+	font-size:18px;
+	font-family:FZLTZHUNHK--GBK1-0;
+	font-weight:400;
+	color:rgba(161,161,161,1);
+	line-height:30px;
+	text-align: center;
+	margin: 80px 0 50px;
+}
+.pub-title h3{
+	font-size:30px;
+	color:rgba(81,81,81,1);
+}
+
+.pub-list{
+	width: 1120px;
+	margin: 0 auto;
+}
+.pub-list li{
+	width: 371.33px;
+	float: left;
+	margin-bottom: 50px;
+	border: 1px solid #FFFFFF;
+}
+.list-img img{
+	width: 100%;
+}
+.article-desc{
+	font-size:14px;
+	padding: 20px;
+	background-color: #f4f4f4;
+	font-family:MicrosoftYaHei;
+	font-weight:400;
+	color:rgba(153,153,153,1);
+}
+.article-desc h4{
+	font-size: 16px;
+	color:rgba(81,81,81,1);
+	 overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap
+}
+.article-desc .pub-text{
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	overflow: hidden;
+}
+.article-desc .pub-time{
+	padding:16px 0;
+}
+.view-more{
+	display: block;
+    width: 100px;
+    height: 30px;
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    font-size: 14px;
+    margin: 50px auto ;
+    cursor: pointer;
+    background-color: #006699;
+}
+
+.workflow{
+	background: url(../img/footer-bg.png) no-repeat;
+	background-size: cover;
+}
+.white-title{
+	font-size: 30px;
+	font-family:FZLTKHK--GBK1-0;
+	color: #fff;
+	font-weight:400;
+	text-align: center;
+}
+
+.white-title p{
+	color: #a1a1a1;
+	font-size: 18px;
+}
+.problem-list li{
+	width: 318px;
+	float: left;
+	font-size:18px;
+	font-weight:bold;
+	color: #515151;
+	line-height:22px;
+	padding: 20px;
+	margin: 10px;
+	font-family:SourceHanSansCN-Regular;
+	border: 1px dashed #959595;
+}
+
+.problem-list {
+	width: 1140px;
+	margin: 0 auto;
+}
+.problem-list h4{
+	height: 44px;
+}
+.problem-list p{
+	height: 66px;
+	font-size:14px;
+	margin-top: 14px;
+}
+.environment{
+	padding: 1px 0 50px;
+	background-color: #F4F4F4;
+}
+.office-list li{
+	margin-bottom: 0;
+}
+/* 资讯 */
+.tab-nav{
+	margin-bottom: 40px;
+	border-bottom: 1px solid #dcdcdc;
+}
+
+.tab-nav ul{
+	width: 340px;
+	margin: 0 auto;
+}
+
+.tab-nav li{
+	float: left;
+	padding: 30px;
+	cursor: pointer;
+	font-size: 16px;
+	color: #6F6F6F;
+}
+
+.tab-nav li.active{
+	border-bottom: 3px solid #006699;
+}
+.tab-nav h3{
+	font-size: 16px;
+	color: #6F6F6F;
+	padding: 30px;
+	text-align: center;
+}
+.pub-content{
+	width: 1120px;
+	margin: 80px auto;
+}
+.details-title h1{
+	font-size: 24px;
+	color: #000000;
+}
+.details-title p{
+	font-size: 16px;
+	color: #999999;
+	padding: 19px 0 40px;
+}
+.details-text p{
+	font-size:14px;
+	color:rgba(111,111,111,1);
+	line-height:35px;
+}
 
 
 /*媒体查询*/
