@@ -17,7 +17,8 @@
 	</head>
 	<body>
 		<div class="nav">
-			<div class="nav-bg">
+			<div class="bg-overflow">
+				<div class="nav-bg"></div>				
 			</div>
 			<div class="nav-float clearfix">
 				<div class="logo fl">
@@ -25,18 +26,28 @@
 						<img src="img/logo.png" >
 					</div>
 				</div>
+				<div class="nav-img">
+					<img src="img/nav.png" >
+				</div>
 				<div class="nav-list fr">
-					<ul class="clearfix wow bounceInDown">
-						<li><a href="index.html">首页</a></li>
-						<li><a href="#">乐途</a></li>
-						<li><a href="#">服务</a></li>
-						<li><a href="wedo/case.html">案例</a></li>
-						<li><a href="wedo/information.html">资讯</a></li>
-						<li><a href="#">招聘</a></li>
-						<li><a href="#">联系我们</a></li>
+					<ul class="clearfix">
+						<li><a href="index.html">首页<span class="en-nav">/HOME PAGE</span></a></li>
+						<li><a href="#">乐途<span class="en-nav">/LETU</span></a></li>
+						<li><a href="#">服务<span class="en-nav">/SERVICES</span></a></li>
+						<li><a href="wedo/case.html">案例<span class="en-nav">/CASE</span></a></li>
+						<li><a href="wedo/information.html">资讯<span class="en-nav">/INFORMATION</span></a></li>
+						<li><a href="#">招聘<span class="en-nav">/RECRUITMENT</span></a></li>
+						<li><a href="wedo/contact.html">联系我们<span class="en-nav">/CONTACT</span></a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
+		<script type="text/javascript">
+			$(function(){
+				$(".nav-img").on("click",function(){
+					$(".nav-list").toggle()
+				})
+			})
+		</script>
 	</body>
 </html>

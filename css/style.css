@@ -249,6 +249,7 @@
 
 .project-list li:hover .pro-cover {
 	opacity: 1;
+	z-index: 1;
 }
 
 .pro-box {
@@ -410,7 +411,7 @@
 	position: fixed;
     right: 0;
     top: 50%;
-    z-index: 999;
+    z-index: 9;
 	}
 .rightNav li{
 	height: 55px;
@@ -516,21 +517,40 @@
 }
 
 .pub-list{
-	width: 1120px;
+	width: 60%;
 	margin: 0 auto;
 }
 .pub-list li{
-	width: 371.33px;
+	width: calc(33.33% - 2px);
 	float: left;
+	position: relative;
 	margin-bottom: 50px;
 	border: 1px solid #FFFFFF;
 }
-.list-img img{
+.pub-list a{
+	display: block;
+	position: relative;
+}
+
+.cover-icon{
+	position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.icon-img{
+	margin: 60px auto 16px;
+}
+.list-img > img{
 	width: 100%;
 }
 .article-desc{
 	font-size:14px;
 	padding: 20px;
+	height: 130px;
 	background-color: #f4f4f4;
 	font-family:MicrosoftYaHei;
 	font-weight:400;
@@ -547,6 +567,12 @@
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
 	-webkit-line-clamp: 3;
+	overflow: hidden;
+}
+.project .pub-text{
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 7;
 	overflow: hidden;
 }
 .article-desc .pub-time{
@@ -582,27 +608,27 @@
 	font-size: 18px;
 }
 .problem-list li{
-	width: 318px;
+	width: 29.16%;
 	float: left;
 	font-size:18px;
 	font-weight:bold;
 	color: #515151;
 	line-height:22px;
-	padding: 20px;
-	margin: 10px;
+	padding: 1%;
+	margin: 1%;
 	font-family:SourceHanSansCN-Regular;
 	border: 1px dashed #959595;
 }
 
 .problem-list {
-	width: 1140px;
+	width: 60%;
 	margin: 0 auto;
 }
 .problem-list h4{
 	height: 44px;
 }
 .problem-list p{
-	height: 66px;
+	height: 86px;
 	font-size:14px;
 	margin-top: 14px;
 }
@@ -613,6 +639,11 @@
 .office-list li{
 	margin-bottom: 0;
 }
+
+.office-list li img{
+	width: 100%;
+}
+
 /* 资讯 */
 .tab-nav{
 	margin-bottom: 40px;
@@ -642,7 +673,7 @@
 	text-align: center;
 }
 .pub-content{
-	width: 1120px;
+	width: 60%;
 	margin: 80px auto;
 }
 .details-title h1{
@@ -660,7 +691,15 @@
 	line-height:35px;
 }
 
-
+.map img{
+	width: 100%;
+}
+.cover-content {
+	display: block;
+}
+.phone-cover{
+	display: none;
+}
 /*媒体查询*/
 
 @media (min-width: 1024px) and (max-width:1279px){
@@ -754,10 +793,266 @@
 }
 
 /*在768 和991 像素之间的屏幕里，小屏幕，主要是PAD*/
-@media (min-width: 768px) and (max-width: 991px) {}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	.banner{
+		height: 480px;
+	}
+	.voice_2 ul li{
+		height: 312px;
+	}
+	.voice_2 .fold .txt{
+		font-size: 14px;
+	}
+	.cover-content {
+		display: none;
+	}
+	.phone-cover{
+		display: block;
+	}
+	.cover{
+		opacity: 1;
+		height: 60px;
+		top: inherit;
+	}
+	.cover-title{
+		font-size: 20px;
+		text-align: center;
+		line-height: 60px;
+	}
+	.case-list li {
+		width: calc(50% - 1px);
+	}
+	.case-list li:nth-child(odd){
+		border-right: 1px solid #dcdcdc;
+	}
+	.case-list li:nth-child(even){
+		border-left: 1px solid #dcdcdc;
+	}
+	.project-list li{
+		height: 250px;
+		width: 33.33%;
+	}
+	.project-list li:last-child{
+		display: none;
+	}
+	.project-item .pro-bg {
+		padding-top: 30%;
+	}
+	.pro-cover{
+		display: none;
+	}
+	.project-list li:after{
+		height: 250px;
+	}
+	.fr-left{
+		display: none;
+	}
+	.fr-right{
+		width: 100%;
+	}
+	.estimate-list li {
+		width: 96%;
+		float: left;
+		margin: 1%;
+		padding: 1%;
+		background: rgba(231,234,240,1);
+	}
+	.erweima{
+		display: none;
+	}
+	.footer-box{
+		width: 100% !important;
+		text-align: center;
+	}
+	.message{
+		float: inherit !important;
+	}
+	.project-list li:hover .project-item {
+		display: block;
+		transform: inherit;
+	}
+	.pub-list,
+	.problem-list,
+	.office-list{
+		width: 100%;
+	}
+	.problem-list li{
+		width: 45.7%;
+	}
+}
 
 /*在480 和767 像素之间的屏幕里，超小屏幕，主要是手机*/
-@media (min-width: 480px) and (max-width: 767px) {}
-
-/*在小于480 像素的屏幕，微小屏幕，更低分辨率的手机*/
-@media (max-width: 479px) {}
+@media  screen and (min-width: 320px) and (max-width: 767px) {
+	.banner{
+		height: 360px;
+	}
+	.voice_2 ul li{
+		height: 200px;
+	}
+	.voice_2 .fold .txt{
+		font-size: 12px;
+	}
+	.cover-content {
+		display: none;
+	}
+	.phone-cover{
+		display: block;
+	}
+	.cover{
+		opacity: 1;
+		height: 40px;
+		top: inherit;
+	}
+	.cover-title{
+		font-size: 14px;
+		text-align: center;
+		line-height: 40px;
+	}
+	.case-list li {
+		width: calc(50% - 1px);
+	}
+	.case-list li:nth-child(odd){
+		border-right: 1px solid #dcdcdc;
+	}
+	.case-list li:nth-child(even){
+		border-left: 1px solid #dcdcdc;
+	}
+	.project-list li{
+		height: 130px;
+		width: 33.33%;
+	}
+	.project-list li:last-child{
+		display: none;
+	}
+	.project-item .pro-bg {
+		padding-top: 30%;
+	}
+	
+	.project-item .pro-bg img{
+		width: 50%;
+	}
+	
+	.project-item p{
+		font-size: 12px;
+	}
+	
+	.project-item .pro-bg img{
+		width: 20%;
+	}
+	
+	.pro-cover{
+		display: none;
+	}
+	.project-list li:after{
+		height: 130px;
+	}
+	.fr-left{
+		display: none;
+	}
+	.fr-right{
+		width: 100%;
+	}
+	.estimate-list li {
+		width: 96%;
+		float: left;
+		margin: 1%;
+		padding: 1%;
+		background: rgba(231,234,240,1);
+	}
+	.erweima{
+		display: none;
+	}
+	.footer-box{
+		width: 100% !important;
+		text-align: center;
+	}
+	.message{
+		float: inherit !important;
+	}
+	.project-list li:hover .project-item {
+		display: block;
+		transform: inherit;
+	}
+	.pub-list,
+	.problem-list,
+	.office-list{
+		width: 100%;
+	}
+	.problem-list li{
+		width: 95%;
+	}
+	.fr-list{
+		padding: 10px;
+	}
+	.slogan{
+		height: 160px;
+	}
+	.slogan-bg{
+		line-height: 160px;
+	}
+	.slogan-text{
+		font-size: 18px;
+	}
+	.rightNav li{
+		height: 35px;
+		width: 35px;
+		line-height: 35px;
+	}
+	.rightNav li img{
+		width: 60%;
+	}
+	.hover-box {
+    position: absolute;
+    width: 290px;
+    left: -290px;
+	}
+	.ipt-box input{
+		width: 250px;
+		margin: 15px 0 0;
+	}
+	.textarea{
+		width: 226px;
+		margin-top: 15px;
+	}
+	.pub-list li{
+		width: calc(50% - 2px);
+		margin-bottom: 25px;
+	}
+	.article-desc{
+		font-size: 12px;
+		padding: 15px;
+		height: 100px;
+	}
+	.article-desc h4{
+		font-size: 14px;
+	}
+	.article-desc .pub-time {
+		padding: 6px 0;
+	}
+	.pub-title{
+		font-size: 14px;
+		margin: 50px 0 10px;
+	}
+	.pub-title h3{
+		font-size: 22px;
+	}
+	.white-title{
+		font-size: 22px;
+	}
+	.white-title p{
+		font-size: 14px;
+	}
+	.tab-nav ul{
+		width: 290px;
+	}
+	.tab-nav ul li{
+		padding: 20px;
+	}
+	.pub-content{
+		width: inherit;
+		margin: 15px;
+	}
+	.estimate-list li p{
+		font-size: 14px;
+	}
+}
