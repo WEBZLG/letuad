@@ -254,4 +254,21 @@
 		color: #E0E1E5;
 		vertical-align: middle;
 	}
+	.footer .connect{
+		font-size: 20px;
+		margin: 16px 0 10px;
+		padding: 0 15px
+	}
+	.footer .connect strong{
+		font-size: 34px;
+	}
+	.copyright{
+		padding: 0 15px;
+	}
+	.footer .copyright .ch{
+		font-size: 18px;
+	}
+	.footer .copyright .en{
+		font-size: 14px;
+	}
 }

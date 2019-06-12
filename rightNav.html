@@ -7,21 +7,11 @@
 	<body>
 		<div class="right-box">
 			<ul>
-				<li class="leave-word">
-					<img src="img/leftnav_icon2.png" >
-				</li>
-				<li>
-					<img src="img/leftnav_icon2.png" >
-				</li>
-				<li>
-					<img src="img/leftnav_icon2.png" >
-				</li>
-				<li>
-					<img src="img/leftnav_icon2.png" >
-				</li>
-				<li class="return-top">
-					<img src="img/leftnav_icon2.png" >
-				</li>
+				<li class="word-icon"></li>
+				<li class="qq-icon"></li>
+				<li class="call-icon"></li>
+				<li class="ewm-icon"></li>
+				<li class="return-top"></li>
 			</ul>
 			<div class="hover-box">
 				<div class="hover-item">
@@ -50,7 +40,7 @@
 		</div>
 		<script type="text/javascript">
 			$(function(){
-				$(".leave-word").on("click",function(){
+				$(".word-icon").on("click",function(){
 					$(".message").show();
 					$(".submit-success").hide();
 					$(".hover-item").slideToggle(500)
