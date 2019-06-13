@@ -1,6 +1,6 @@
 /* banner */
 .banner {
-	height: 943px;
+	/* height: 943px; */
 	position: relative;
 }
 
@@ -15,9 +15,16 @@
 	text-align: center;
 	background: #fff;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 100%;
 }
 
+.step-box {
+	width: 60%;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+.step-box img,
 .swiper-slide img {
 	width: 100%;
 }
@@ -101,7 +108,7 @@
 
 .mouse {
 	position: absolute;
-	bottom: 193px;
+	bottom: 300px;
 	left: 50%;
 	margin-left: -15px;
 	z-index: 1;
@@ -275,6 +282,7 @@
 	font-size: 14px;
 	font-family: SourceHanSansCN-Normal;
 }
+
 
 /* 合作伙伴 */
 .friends {
@@ -632,7 +640,7 @@
 .article-desc {
 	font-size: 14px;
 	padding: 20px;
-	height: 130px;
+	height: 180px;
 	background-color: #f4f4f4;
 	font-family: MicrosoftYaHei;
 	font-weight: 400;
@@ -659,6 +667,10 @@
 	-webkit-box-orient: vertical;
 	-webkit-line-clamp: 7;
 	overflow: hidden;
+	width: 100%;
+	padding: 0;
+	font-size: 14px;
+	line-height: 26px;
 }
 
 .article-desc .pub-time {
@@ -807,7 +819,6 @@
 	height: auto;
 	padding: 70px 0 70px 0;
 	width: 100%;
-	min-width: 1175px;
 	clear: both;
 	background: url(../img/about_logo_p1.png) no-repeat top center #f4f4f4;
 }
@@ -843,15 +854,12 @@
 .pub-text {
 	font-size: 18px;
 	color: #333;
-	width: 60%;
 	margin: auto;
 	line-height: 35px;
-	padding-top: 25px;
 	text-align: center;
 }
 
 .lt-service {
-	height: 872px;
 	width: 100%;
 	margin-top: 60px;
 	margin-bottom: 80px;
@@ -860,23 +868,142 @@
 	text-align: center;
 	background: url(../img/about_service_bg.jpg) no-repeat center;
 }
-.lt-service .media-title{
-    background: url(../images/service_icon1.png) no-repeat top center;
-    height: 190px;
-    width: 100%;
-    clear: both;
-    text-align: center;
-    color: #fff;
-}
-.lt-way{
+
+.lt-service .media-title {
+	background: url(../images/service_icon1.png) no-repeat top center;
+	width: 100%;
+	clear: both;
 	text-align: center;
+	color: #fff;
+}
+
+.lt-way {
+	text-align: center;
+}
+
+.lt-spirit,
+.lt-culture {
+	margin: 50px 0;
+}
+
+.media-box {
+	/* padding-top: 50px; */
+	width: 60%;
+	margin: 0 auto;
+}
+
+.lt-way {
+	margin-bottom: 50px;
+}
+
+.wap_banner {
+	display: none;
+}
+
+/* 服务 */
+.service-list{
+	margin: 50px 0;
+}
+
+.item-box{
+	width: 60%;
+	margin: 30px auto;
+	border: 1px solid #e0e0e0;
+}
+
+.item-details li{
+	float: left;
+	margin:10px 20px;
+}
+
+.item-details a{
+	display: block;
+    height: 40px;
+    width: 150px;
+    border: 1px solid #dddddd;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    color: black;
+	transition: all .3s linear;
+}
+
+.item-details a:hover{
+	color: #FFFFFF;
+	background-color: #000000;
+}
+
+.title-icon{
+	height: 50px;
+    width: 50px;
+	display: inline-block;
+	vertical-align: middle;
+	margin:0 20px 10px;
+	background: url(../img/icon-service-1.png) no-repeat;
+	background-size: cover;
+}
+
+.service-list .item-box:nth-child(3) .title-icon{
+	background: url(../img/icon-service-2.png) no-repeat;
+	background-size: cover;	
+}
+.service-list .item-box:nth-child(4) .title-icon{
+	background: url(../img/icon-service-3.png) no-repeat;
+	background-size: cover;	
+}
+.service-list .item-box:nth-child(5) .title-icon{
+	background: url(../img/icon-service-4.png) no-repeat;
+	background-size: cover;	
+}
+.service-list .item-box:nth-child(6) .title-icon{
+	background: url(../img/icon-service-5.png) no-repeat;
+	background-size: cover;	
+}
+
+.item-list{
+	width: 60%;
+}
+
+.item-list h2{
+	margin-top: 20px;
+}
+
+.item-img{
+	width: 26%;
+	min-width: 255px;
+}
+
+.item-img img{
+	width: 100%;
+}
+
+.contact-box{
+	width: 60%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.contact-box>div{
+	font-size: 18px;
+	line-height: 40px;
+}
+.letu-contact{
+	width: 400px;
 }
 /*媒体查询*/
 
 @media (min-width: 1024px) and (max-width:1279px) {
 
-	.banner {
-		height: 768px;
+	.text-img img {
+		width: 100%;
+	}
+
+	.lt-spirit,
+	.lt-culture,
+	.lt-way {
+		width: 60%;
+		margin: 50px auto;
 	}
 
 	.voice_2 ul li {
@@ -937,11 +1064,35 @@
 	.map img {
 		width: 100%;
 	}
+
+	.pub-list {
+		width: 80%;
+	}
+
+	.icon-img {
+		margin: 40px auto 16px;
+	}
+
+	.article-desc .pub-time {
+		padding: 10px 0;
+	}
+
+	.article-desc .pub-text {
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 5;
+		overflow: hidden;
+		font-size: 14px;
+		line-height: 22px;
+	}
+	.item-list {
+		width: 58%;
+	}
 }
 
 @media (min-width: 1280px) and (max-width:1439px) {
 	.banner {
-		height: 800px;
+		/* height: 800px; */
 	}
 
 	.voice_2 ul li {
@@ -976,7 +1127,7 @@
 
 @media (min-width: 1440px) and (max-width:1679px) {
 	.banner {
-		height: 900px;
+		/* height: 900px; */
 	}
 
 	.voice_2 ul li {
@@ -989,12 +1140,12 @@
 	}
 }
 
-@media (min-width: 1680px) and (max-width:1919px) {}
+/* @media (min-width: 1680px) and (max-width:1919px) {} */
 
 /*在768 和991 像素之间的屏幕里，小屏幕，主要是PAD*/
 @media screen and (min-width: 768px) and (max-width: 991px) {
 	.banner {
-		height: 480px;
+		/* height: 480px; */
 	}
 
 	.voice_2 ul li {
@@ -1105,16 +1256,98 @@
 	.map img {
 		width: 100%;
 	}
+
+	.wap_banner {
+		display: block;
+	}
+
+	.pc_banner {
+		display: none;
+	}
+
+	.article-desc .pub-time {
+		padding: 10px 0;
+	}
+
+	.article-desc {
+		padding: 10px;
+	}
+
+	.pub-text {
+		width: 100%;
+		padding: 0;
+		font-size: 20px;
+		line-height: 42px;
+	}
+
+	.view-more {
+		margin: 24px auto;
+	}
+
+	.step-box {
+		width: 100%;
+		padding: 0;
+	}
+
+	.media-box {
+		padding: 20px 15px;
+	}
+
+	.lt-spirit,
+	.lt-culture,
+	.lt-way {
+		padding: 0 15px;
+	}
+
+	.text-img img {
+		width: 100%;
+	}
+
+	.icon-img {
+		margin: 30px auto 16px;
+	}
+
+	.project .pub-text {
+		-webkit-line-clamp: 5;
+		font-size: 14px;
+		line-height: 26px;
+	}
+
+	.article-desc .pub-text {
+		font-size: 14px;
+		line-height: 26px;
+	}
+
+	.pub-content {
+		width: 80%;
+		margin: 60px auto;
+	}
+
+	.details-text p {
+		font-size: 20px;
+	}
+	.item-img{
+		display: none;
+	}
+	.item-box{
+		width: 80%;
+	}
+	.item-list{
+		width: 100%;
+	}
+	.item-list h2 {
+		margin-top: 10px;
+	}
 }
 
 /*在480 和767 像素之间的屏幕里，超小屏幕，主要是手机*/
 @media screen and (min-width: 320px) and (max-width: 767px) {
 	.banner {
-		height: 360px;
+		/* height: 360px; */
 	}
 
 	.voice_2 ul li {
-		height: 200px;
+		height: 160px;
 	}
 
 	.voice_2 .fold .txt {
@@ -1279,8 +1512,9 @@
 
 	.article-desc {
 		font-size: 12px;
-		padding: 15px;
-		height: 100px;
+		padding: 4px;
+		height: 120px;
+		overflow: hidden;
 	}
 
 	.article-desc h4 {
@@ -1293,7 +1527,7 @@
 
 	.pub-title {
 		font-size: 14px;
-		margin: 50px 0 10px;
+		margin: 24px 0 10px;
 	}
 
 	.pub-title h3 {
@@ -1301,7 +1535,7 @@
 	}
 
 	.white-title {
-		font-size: 22px;
+		font-size: 20px;
 	}
 
 	.white-title p {
@@ -1318,7 +1552,7 @@
 
 	.pub-content {
 		width: inherit;
-		margin: 15px;
+		margin: 30px 15px;
 	}
 
 	.estimate-list li p {
@@ -1326,7 +1560,7 @@
 	}
 
 	.voice_2 {
-		height: 200px;
+		height: 160px;
 		overflow: hidden;
 	}
 
@@ -1334,4 +1568,114 @@
 		width: 100%;
 	}
 
+	.text-img img {
+		width: 100%;
+	}
+
+	.lt-media {
+		padding: 0;
+	}
+
+	.media-title div {
+		font-size: 22px;
+		line-height: 40px;
+	}
+
+	.project .pub-text {
+		font-size: 12px;
+		color: #333;
+		width: 100%;
+		margin: auto;
+		line-height: 20px;
+		padding-top: 0px;
+		text-align: center;
+		padding-bottom: 30px;
+		-webkit-line-clamp: 6;
+	}
+
+	.icon-img {
+		margin: 20px auto 10px;
+	}
+
+	.icon-img img {
+		width: 16%;
+	}
+
+	.cover-icon {
+		font-size: 14px;
+	}
+
+	.tab-nav {
+		margin-bottom: 30px;
+	}
+
+	.tab-nav h3 {
+		padding: 16px;
+	}
+
+	.wap_banner {
+		display: block;
+	}
+
+	.pc_banner {
+		display: none;
+	}
+
+	.pub-text {
+		font-size: 12px;
+		width: 100%;
+		line-height: 24px;
+		padding-top: 0px;
+	}
+
+	.view-more {
+		margin: 20px auto;
+	}
+
+	.step-box {
+		width: 100%;
+		padding: 0;
+	}
+
+	.media-box {
+		padding: 20px 15px;
+		width: 90%;
+	}
+
+	.lt-spirit,
+	.lt-culture,
+	.lt-way {
+		padding: 0 15px;
+	}
+
+	.details-title h1 {
+		font-size: 18px;
+	}
+
+	.details-text p {
+		font-size: 14px;
+		line-height: 24px;
+	}
+
+	.details-title p {
+		font-size: 12px;
+		color: #999999;
+		padding: 15px 0 20px;
+	}
+	.item-box{
+		width: 90%;
+	}
+	.item-list {
+		width: 100%;
+		text-align: center;
+	}
+	.item-details li{
+		float: none;
+	}
+	.item-details a{
+		margin: 0 auto;
+	}
+	.item-img{
+		display: none;
+	}
 }
