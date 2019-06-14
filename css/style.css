@@ -901,99 +901,220 @@
 }
 
 /* 服务 */
-.service-list{
+.service-list {
 	margin: 50px 0;
 }
 
-.item-box{
+.item-box {
 	width: 60%;
 	margin: 30px auto;
 	border: 1px solid #e0e0e0;
 }
 
-.item-details li{
+.item-details li {
 	float: left;
-	margin:10px 20px;
+	margin: 10px 20px;
 }
 
-.item-details a{
+.item-details a {
 	display: block;
-    height: 40px;
-    width: 150px;
-    border: 1px solid #dddddd;
-    text-align: center;
-    line-height: 40px;
-    text-decoration: none;
-    color: black;
+	height: 40px;
+	width: 150px;
+	border: 1px solid #dddddd;
+	text-align: center;
+	line-height: 40px;
+	text-decoration: none;
+	color: black;
 	transition: all .3s linear;
 }
 
-.item-details a:hover{
+.item-details a:hover {
 	color: #FFFFFF;
 	background-color: #000000;
 }
 
-.title-icon{
+.title-icon {
 	height: 50px;
-    width: 50px;
+	width: 50px;
 	display: inline-block;
 	vertical-align: middle;
-	margin:0 20px 10px;
+	margin: 0 20px 10px;
 	background: url(../img/icon-service-1.png) no-repeat;
 	background-size: cover;
 }
 
-.service-list .item-box:nth-child(3) .title-icon{
+.service-list .item-box:nth-child(3) .title-icon {
 	background: url(../img/icon-service-2.png) no-repeat;
-	background-size: cover;	
-}
-.service-list .item-box:nth-child(4) .title-icon{
-	background: url(../img/icon-service-3.png) no-repeat;
-	background-size: cover;	
-}
-.service-list .item-box:nth-child(5) .title-icon{
-	background: url(../img/icon-service-4.png) no-repeat;
-	background-size: cover;	
-}
-.service-list .item-box:nth-child(6) .title-icon{
-	background: url(../img/icon-service-5.png) no-repeat;
-	background-size: cover;	
+	background-size: cover;
 }
 
-.item-list{
+.service-list .item-box:nth-child(4) .title-icon {
+	background: url(../img/icon-service-3.png) no-repeat;
+	background-size: cover;
+}
+
+.service-list .item-box:nth-child(5) .title-icon {
+	background: url(../img/icon-service-4.png) no-repeat;
+	background-size: cover;
+}
+
+.service-list .item-box:nth-child(6) .title-icon {
+	background: url(../img/icon-service-5.png) no-repeat;
+	background-size: cover;
+}
+
+.item-list {
 	width: 60%;
 }
 
-.item-list h2{
+.item-list h2 {
 	margin-top: 20px;
 }
 
-.item-img{
+.item-img {
 	width: 26%;
 	min-width: 255px;
 }
 
-.item-img img{
+.item-img img {
 	width: 100%;
 }
 
-.contact-box{
+.contact-box {
 	width: 60%;
 	margin: 0 auto;
-	display: flex;
 	align-items: center;
+	padding: 50px 0;
+	border-bottom: 1px solid #DCDCDC;
 	justify-content: space-around;
 }
-.contact-box>div{
+
+.contact-box>div {
 	font-size: 18px;
 	line-height: 40px;
 }
-.letu-contact{
-	width: 400px;
+
+.letu-img img,
+.weneed img {
+	width: 100%;
 }
+
+.contact-box .letu-contact {
+	width: 500px;
+	margin-left: 20px;
+}
+
+/* 招聘 */
+.post-box {
+	width: 60%;
+	margin: 50px auto;
+}
+
+.left-img {
+	width: 35%;
+	float: left;
+	position: relative;
+}
+
+.left-img img {
+	width: 100%;
+}
+
+.over-text {
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #FFFFFF;
+}
+
+.over-text h3 {
+	padding: 10px 0;
+	width: 125px;
+	text-align: center;
+	background-color: #a8eb1f;
+	color: #000;
+	float: right;
+	margin-right: -15px;
+	margin-top: 15%;
+}
+
+.welcome {
+	position: absolute;
+	top: 145%;
+	left: -156px;
+	text-align: right;
+	line-height: 40px;
+	font-size: 20px;
+}
+
+.post-list {
+	float: right;
+	width: 60%;
+}
+
+.number {
+	display: flex;
+	align-items: center;
+}
+
+.number .num {
+	width: 50px;
+	background: #006699;
+	font-size: 28px;
+	float: left;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+	font-family: Arial, Helvetica;
+	font-weight: bold;
+	margin-right: 10px;
+}
+
+.post-desc p {
+	color: #999999;
+	padding-left: 90px;
+	line-height: 30px;
+}
+
+.post-desc label {
+	font-weight: bold;
+}
+
+.post h4 {
+	font-size: 20px;
+	color: #069
+}
+
+.post p {
+	font-size: 14px;
+	margin-top: 4px;
+}
+
+.post-item {
+	margin: 15px 0;
+}
+
+.post-content {
+	margin-bottom: 50px;
+}
+
 /*媒体查询*/
 
 @media (min-width: 1024px) and (max-width:1279px) {
+
+	.post-box,
+	.contact-box {
+		width: 90%;
+	}
+
+	.weneed {
+		display: none;
+	}
+
+	.contact-box .letu-contact {
+		float: right;
+	}
 
 	.text-img img {
 		width: 100%;
@@ -1085,14 +1206,17 @@
 		font-size: 14px;
 		line-height: 22px;
 	}
+
 	.item-list {
 		width: 58%;
 	}
 }
 
 @media (min-width: 1280px) and (max-width:1439px) {
-	.banner {
-		/* height: 800px; */
+
+	.post-box,
+	.contact-box {
+		width: 90%;
 	}
 
 	.voice_2 ul li {
@@ -1126,8 +1250,10 @@
 }
 
 @media (min-width: 1440px) and (max-width:1679px) {
-	.banner {
-		/* height: 900px; */
+
+	.post-box,
+	.contact-box {
+		width: 80%;
 	}
 
 	.voice_2 ul li {
@@ -1144,8 +1270,15 @@
 
 /*在768 和991 像素之间的屏幕里，小屏幕，主要是PAD*/
 @media screen and (min-width: 768px) and (max-width: 991px) {
-	.banner {
-		/* height: 480px; */
+
+	.letu-img,
+	.weneed,
+	.left-img {
+		display: none;
+	}
+
+	.post-list {
+		width: 100%;
 	}
 
 	.voice_2 ul li {
@@ -1326,15 +1459,19 @@
 	.details-text p {
 		font-size: 20px;
 	}
-	.item-img{
+
+	.item-img {
 		display: none;
 	}
-	.item-box{
+
+	.item-box {
 		width: 80%;
 	}
-	.item-list{
+
+	.item-list {
 		width: 100%;
 	}
+
 	.item-list h2 {
 		margin-top: 10px;
 	}
@@ -1342,10 +1479,37 @@
 
 /*在480 和767 像素之间的屏幕里，超小屏幕，主要是手机*/
 @media screen and (min-width: 320px) and (max-width: 767px) {
-	.banner {
-		/* height: 360px; */
+
+	.letu-img,
+	.weneed,
+	.left-img {
+		display: none;
 	}
 
+	.post-box,
+	.contact-box {
+		width: 90%;
+		padding: 20px 0;
+		margin: 0 auto;
+	}
+
+	.post-list {
+		width: 100%;
+	}
+
+	.contact-box .letu-contact {
+		width: 100%;
+		margin-left: 0;
+		font-size: 14px;
+		line-height: 24px;
+	}
+	.post-desc label{
+		float: inherit;
+	}
+	.post-desc p{
+		padding: 0;
+	}
+	
 	.voice_2 ul li {
 		height: 160px;
 	}
@@ -1662,20 +1826,25 @@
 		color: #999999;
 		padding: 15px 0 20px;
 	}
-	.item-box{
+
+	.item-box {
 		width: 90%;
 	}
+
 	.item-list {
 		width: 100%;
 		text-align: center;
 	}
-	.item-details li{
+
+	.item-details li {
 		float: none;
 	}
-	.item-details a{
+
+	.item-details a {
 		margin: 0 auto;
 	}
-	.item-img{
+
+	.item-img {
 		display: none;
 	}
 }
