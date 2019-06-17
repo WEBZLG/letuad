@@ -13,6 +13,7 @@
 				<li class="ewm-icon"></li>
 				<li class="return-top"></li>
 			</ul>
+			<!-- 留言 -->
 			<div class="hover-box">
 				<div class="hover-item">
 					<div class="message">
@@ -37,6 +38,14 @@
 					</div>
 				</div>
 			</div>
+			<!-- 电话 -->
+			<div class="hover-call">
+				<img src="img/0451-84520033.png" >
+			</div>
+			<!-- 二维码 -->
+			<div class="hover-ewm">
+				<img src="img/code-weixin.png" >
+			</div>
 		</div>
 		<script type="text/javascript">
 			$(function(){
@@ -58,6 +67,16 @@
 				$('.return-top').on("click",function(){
 				$('html , body').animate({scrollTop: 0},'slow');
 				});
+				$(".call-icon").hover(function(){
+					$(".hover-call").slideDown(500)
+				},function(){
+					$(".hover-call").slideUp(500)
+				})
+				$(".ewm-icon").hover(function(){
+					$(".hover-ewm").slideDown(500)
+				},function(){
+					$(".hover-ewm").slideUp(500)
+				})
 			})
 		</script>
 	</body>

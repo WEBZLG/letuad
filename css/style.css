@@ -405,17 +405,6 @@
 	padding: 1%;
 }
 
-/* .estimate-list ul{
-	display: flex;
-	flex-wrap: wrap;
-}
-.estimate-list li{
-    flex: 1;
-    margin: 17px;
-    padding: 17px;
-    background: rgba(231,234,240,1);
-} */
-
 .estimate-list li {
 	float: left;
 	width: 45%;
@@ -452,7 +441,18 @@
 	cursor: pointer;
 	background-size: cover;
 }
-
+.hover-call{
+	position: absolute;
+    top: 0;
+    left: -180px;
+	display: none;
+}
+.hover-ewm{
+    position: absolute;
+    left: -180px;
+    top: 0;
+	display: none;
+}
 .rightNav .word-icon {
 	background: url(../img/lyi0.png) no-repeat;
 	background-size: cover;
